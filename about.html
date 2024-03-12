@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="style-about.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="first-nav">Sudoku Solver</div>
+            <div class="second-nav">
+                <ul>
+                    <a href="/index.html"><li id="first-page">Home</li></a>
+                    <a href="/"><li id="second-page">About</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="container">
+            <h1>Introduction to Sudoku Puzzle</h1>
+
+            <p class="paragraph">
+                Sudoku is a popular logic-based puzzle game that involves filling a 9*9 matrix with digits so that each column, each row, and each of the nine 3*3 subgrids (also called as "boxes") contains all of the digits from 1 to 9. The puzzle starts with the some cells already filled with numbers, and the goal is to fill in the remaining empty cells. <br><br>
+                It is a very popular logic building games also given in newspapers and magzines. Generally, we follows the approach of backtracking to solve the sudoku puzzle. In backtracking, we fill the values in the matrix one by one. If we stuck to any cell, we will backtrack to previous cell and try with some other values between 1 and 9. 
+            </p>
+
+            <h1>Rules for solving the Sudoku Puzzle</h1>
+            <h4>1. Every row and column must contain the each and every value between 1 and 9.</h4>
+            <h4>2. There must not be any repetition of a digit in a single row or the column.</h4>
+            <h4>3. Each 3*3 subgrid must contain all the digits between 1 and 9 without any repetition of number.</h4>
+
+            <h1>Steps for solving Sudoku Puzzle</h1>
+            <p class="paragraph">
+                1. Start by scanning the puzzle for any obvious placements. Look for rows, columns, or 3x3 subgrids that only have one empty cell left. In such cases, you can easily deduce the number that should go there. <br><br>
+                2. Use the numbers already present in rows, columns, and 3x3 subgrids to eliminate possibilities for the empty cells. For example, if a number is already present in a row, column, or subgrid, it cannot appear again in the same row, column, or subgrid. <br><br>
+                3. Identify candidate numbers for each empty cell based on the numbers already present in its row, column, and subgrid. Then, use logical deduction to narrow down the possibilities until you find the correct number. <br><br>
+                4. As a last resort, if you're stuck, you can make educated guesses for a cell and continue solving the puzzle. If you reach a contradiction (i.e., violating one of the Sudoku rules), backtrack and try a different number. <br><br>
+            </p>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div id="copyright"></div>
+    </footer>
+</body>
+
+<script>
+    const footer = document.getElementById("copyright");
+
+    const copyrightSymbol = "\u00A9";
+
+    footer.innerText = `${copyrightSymbol} Copyright | Created By Ayush Jain.`;
+</script>
+
+</html>

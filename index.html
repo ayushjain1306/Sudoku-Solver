@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="first-nav">Sudoku Solver</div>
+            <div class="second-nav">
+                <ul>
+                    <a href="/"><li id="first-page">Home</li></a>
+                    <a href="/about.html"><li class="second-page">About</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="inside-container-first">
+                <div id="table-section"></div>
+                <div id="buttons">
+                    <button class="btn" onclick="handleSubmit()">Solve</button>
+                    <button class="btn" onclick="handleReset()">Reset</button>
+                </div>
+            </div>
+            <div class="inside-container-second">
+                <h1 id="heading">How to use?</h1>
+                <h4>1. Start by understanding the <a href="/about.html">rules</a> for solving the Sudoku puzzle.</h4>
+                <h4>2. Fill the values in given sudoku puzzle. Keep in mind that, there can never be any same value in a single row or a column. Even it is not possible in a 3*3 matrix (outlined in a dark).</h4>
+                <h4>3. Click on the "Solve" button. All the values get automatically filled in the puzzle that will be your final answer.</h4>
+                <h4>4. You can erase all the values by just clicking on the "Reset" button.</h4>
+                <h4>5. Follow the above steps again to solve more puzzles.</h4>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div id="copyright"></div>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+<script src="script2.js"></script>
+<script src="script3.js"></script>
+</html>

@@ -1,0 +1,93 @@
+:root {
+    --main-color: #1100ab;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #e3e3e3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* header */
+
+.navbar {
+    background-color: var(--main-color);
+    height: 9vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 8px 5px rgb(143, 142, 142);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.first-nav {
+    width: 50%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 15vw;
+}
+
+.second-nav {
+    color: #e3e3e3;
+    width: 50%;
+}
+
+.second-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-nav ul li {
+    color: #e3e3e3;
+    text-decoration: none;
+    font-size: 17px;
+    list-style: none;
+    font-weight: bold;
+    margin-right: 7vw;
+    cursor: pointer;
+}
+
+.second-nav ul li:hover {
+    color: white;
+}
+
+#second-page {
+    text-decoration: underline solid #e3e3e3 3px;
+}
+
+/* main section */
+
+#container {
+    margin-top: 12vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: justify;
+}
+
+.paragraph {
+    font-size: 20px;
+}
+
+#container h1 {
+    margin-top: 40px;
+}
+
+#container h4 {
+    font-size: 18px;
+}
+
+hr {
+    border: 1px solid var(--main-color);
+    margin: 5vh 10vw;
+}
+
+footer {
+    color: var(--main-color);
+    height: 8vh;
+    text-align: center;
+}

@@ -1,0 +1,60 @@
+@media screen and (max-width: 700px){
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .inside-container-second {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 10vh;
+    }
+
+    .inside-container-first {
+        width: 100%;
+    }
+
+    #table tr td {
+        height: 25px;
+        width: 25px;
+        font-size: 10px;
+    }
+
+    .digit-input {
+        font-size: 10px;
+        width: 25px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px){
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .inside-container-second {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 10vh;
+    }
+
+    .inside-container-first {
+        width: 100%;
+    }
+
+    #table tr td {
+        height: 50px;
+        width: 50px;
+        font-size: 20px;
+    }
+
+    .digit-input {
+        font-size: 20px;
+        width: 50px;
+    }
+
+    .btn {
+        font-size: 30px;
+        padding: 10px 5vw;
+        margin-right: 5vw;
+        cursor: pointer;
+    }
+}

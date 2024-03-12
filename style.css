@@ -1,0 +1,155 @@
+:root {
+    --main-color: #1100ab;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #e3e3e3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* header */
+
+.navbar {
+    background-color: var(--main-color);
+    height: 9vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 8px 5px rgb(143, 142, 142);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.first-nav {
+    width: 50%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 15vw;
+}
+
+.second-nav {
+    color: #e3e3e3;
+    width: 50%;
+}
+
+.second-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-nav ul li {
+    text-decoration-color: #e3e3e3;
+    font-size: 17px;
+    list-style: none;
+    font-weight: bold;
+    margin-right: 7vw;
+    cursor: pointer;
+    color: #e3e3e3;
+}
+
+.second-nav ul li:hover {
+    color: white;
+}
+
+#first-page {
+    text-decoration: underline solid #e3e3e3 3px;
+}
+
+/* main section */
+
+.container {
+    margin-top: 17vh;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.inside-container-first {
+    width: 60%;
+    text-align: center;
+}
+
+.inside-container-second {
+    width: 30%;
+    text-align: justify;
+}
+
+.inside-container-second h1{
+    margin-top: 0px;
+}
+
+.inside-container-second a {
+    color: var(--main-color);
+}
+
+#table tr td {
+    height: 7vh;
+    width: 7vh;
+    text-align: center;
+    font-size: 20px;
+}
+
+.row1, .col1 {
+    border: 1px solid black;
+}
+
+.row2 {
+    border-bottom: 2px solid black;
+}
+
+.col2 {
+    border-right: 2px solid black;
+}
+
+#table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.digit-input {
+    background-color: #e3e3e3;
+    font-size: 20px;
+    text-align: center;
+    border: 0px;
+    width: 7vh;
+    outline: none;
+}
+
+#buttons {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 8px 3vw;
+    margin-right: 3vw;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+hr {
+    border: 1px solid var(--main-color);
+    margin: 5vh 10vw;
+}
+
+footer {
+    height: 8vh;
+    text-align: center;
+    color: var(--main-color);
+    font-size: 15px;
+}
