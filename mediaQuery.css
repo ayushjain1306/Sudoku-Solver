@@ -63,4 +63,8 @@
     .navbar{
         height: 20vh;
     }
+
+    .container {
+        margin-top: 22vh;
+    }
 }
