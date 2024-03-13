@@ -36,7 +36,6 @@ function isValidData(){
         for (let j = 0; j< 9; j++){
             if (dataArray != 0){
                 check = true;
-                break;
             }
         }
     }
