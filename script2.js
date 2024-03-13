@@ -48,7 +48,7 @@ function isValidData(){
 
         for (let j =0; j< 9; j++){
             if (set.has(dataArray[i][j]) && dataArray[i][j] != 0){
-                alert("Same digit cannot be present in the same row.");
+                alert("Same digits cannot be present multiple times in the same row.");
                 return false;
             }
             set.add(dataArray[i][j]);
@@ -60,7 +60,7 @@ function isValidData(){
 
         for (let i =0; i< 9; i++){
             if (set.has(dataArray[i][j]) && dataArray[i][j] != 0){
-                alert("Same digit cannot be present in the same column.");
+                alert("Same digit cannot be present multiple times in the same column.");
                 return false;
             }
 
