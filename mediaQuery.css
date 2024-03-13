@@ -58,3 +58,9 @@
         cursor: pointer;
     }
 }
+
+@media screen and (max-height: 300px){
+    .navbar{
+        height: 20vh;
+    }
+}
