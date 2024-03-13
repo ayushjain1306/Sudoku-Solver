@@ -30,13 +30,26 @@ function handleReset(){
 
 function isValidData(){
     let set = new Set();
+    let check = false;
+
+    for (let i = 0; i< 9; i++){
+        for (let j = 0; j< 9; j++){
+            if (dataArray != 0){
+                check = true;
+                break;
+            }
+        }
+    }
+
+    if (check){
 
     for (let i =0; i< 9; i++){
         set.clear();
 
         for (let j =0; j< 9; j++){
             if (set.has(dataArray[i][j]) && dataArray[i][j] != 0){
-                return ("Same digit cannot be present in the same row.");
+                alert("Same digit cannot be present in the same row.");
+                return false;
             }
             set.add(dataArray[i][j]);
         }
@@ -47,11 +60,17 @@ function isValidData(){
 
         for (let i =0; i< 9; i++){
             if (set.has(dataArray[i][j]) && dataArray[i][j] != 0){
-                return ("Same digit cannot be present in the same column.");
+                alert("Same digit cannot be present in the same column.");
+                return false;
             }
 
             set.add(dataArray[i][j]);
         }
+    }
+    }
+    else {
+        alert("Please fill some values in the matrix.");
+        return false;
     }
 
     return true;
@@ -60,8 +79,7 @@ function isValidData(){
 function handleSubmit(){
     const valid = isValidData();
 
-    if (valid != true){
-        alert(result);
+    if (!valid){
         return;
     }
 
