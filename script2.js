@@ -30,17 +30,6 @@ function handleReset(){
 
 function isValidData(){
     let set = new Set();
-    let check = false;
-
-    for (let i = 0; i< 9; i++){
-        for (let j = 0; j< 9; j++){
-            if (dataArray != 0){
-                check = true;
-            }
-        }
-    }
-
-    if (check){
 
     for (let i =0; i< 9; i++){
         set.clear();
@@ -65,11 +54,6 @@ function isValidData(){
 
             set.add(dataArray[i][j]);
         }
-    }
-    }
-    else {
-        alert("Please fill some values in the matrix.");
-        return false;
     }
 
     return true;
