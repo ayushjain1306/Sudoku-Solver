@@ -13,7 +13,7 @@ body {
 
 .navbar {
     background-color: var(--main-color);
-    height: 9vh;
+    height: 10vh;
     width: 100vw;
     display: flex;
     align-items: center;
