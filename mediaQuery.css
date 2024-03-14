@@ -59,7 +59,7 @@
     }
 }
 
-@media screen and (max-height: 700px){
+@media screen and (max-height: 400px){
     .navbar{
         height: 20vh;
     }
